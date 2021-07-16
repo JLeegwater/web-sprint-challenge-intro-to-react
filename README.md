@@ -81,6 +81,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+   React helps with not overloading the dom by using a virtual dom and makes it easier to create elements on the dom
 1. Describe component state.
+   component state is what our components get passed from whatever is calling them. they only take objects.
 1. Describe props.
+   props is the way we pass date
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+   useEffect helps with syncing data and we could use async to help it do that if needed.
