@@ -2,13 +2,29 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledChar = styled.p`
-  background-color: "#181a1b";
-  opacity: 1;
-  color: "#d0ccc5";
+const StyledChar = styled.h1``;
+
+const StyledDiv = styled.div`
+  padding: 8px;
+  border-color: white;
+  border-bottom: 2px solid white;
+  border: 5px;
+  border-radius: 25px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: gray;
+  }
 `;
 
 export default function Character({ character }) {
-  //console.log(character);
-  return <StyledChar>{character.name}</StyledChar>;
+  console.log(character);
+
+  return (
+    <StyledDiv>
+      <StyledChar>{character.name}</StyledChar>
+      <h2>Details: </h2>
+      <p>Gender: {character.gender} </p>
+      <p>Eye color: {character.eye_color}</p>
+    </StyledDiv>
+  );
 }

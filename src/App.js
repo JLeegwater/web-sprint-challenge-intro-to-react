@@ -25,11 +25,20 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+  // const openDetails = (id) => {
+  //   setCurrentFriendId(id);
+  // };
+
+  // const closeDetails = () => {
+  //   setCurrentFriendId(null);
+  // };
+
   useEffect(() => {
     axios
       .get(`https://swapi.dev/api/people`)
       .then((res) => {
         setCharacters(res.data);
+
         console.log(res);
       })
       .catch((error) => {
